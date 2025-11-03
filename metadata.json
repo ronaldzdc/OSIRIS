@@ -1,5 +1,0 @@
-{
-  "name": "Osiris: Menstrual Cycle Tracker",
-  "description": "An intelligent, private, on-device menstrual cycle tracker and predictor. Osiris uses local machine learning to provide accurate predictions for your cycle phases and fertility, keeping your data securely on your device.",
-  "requestFramePermissions": []
-}

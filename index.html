@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Osiris: Menstrual Cycle Tracker</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'brand-background': '#121212',
+              'brand-surface': '#1e1e1e',
+              'brand-primary': '#bb86fc',
+              'brand-secondary': '#03dac6',
+              'brand-text-primary': '#e0e0e0',
+              'brand-text-secondary': '#a0a0a0',
+              'phase-menstruation': 'rgba(239, 68, 68, 0.7)',
+              'phase-follicular': 'rgba(59, 130, 246, 0.7)',
+              'phase-ovulation': 'rgba(234, 179, 8, 0.7)',
+              'phase-luteal': 'rgba(139, 92, 246, 0.7)',
+            },
+          },
+        },
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.20.0/dist/tf.min.js"></script>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "date-fns": "https://aistudiocdn.com/date-fns@^4.1.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "@tensorflow/tfjs": "https://aistudiocdn.com/@tensorflow/tfjs@^4.22.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-brand-background text-brand-text-primary">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
